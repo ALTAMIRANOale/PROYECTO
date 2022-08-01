@@ -56,7 +56,7 @@ ROOT_URLCONF = 'ong_grupo1.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templates')],
+        'DIRS': [os.path.join(os.path.dirname(BASE_DIR),'templeates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'ong_grupo1.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'ongdb',
+        'USER': 'root',
+        'PASSWORD': '28159357',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
@@ -124,5 +128,12 @@ STATICFILES_DIRS = (
     os.path.join(os.path.dirname(BASE_DIR), 'static'),
     )
 
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'media')
+
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
