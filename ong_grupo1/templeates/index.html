@@ -1,13 +1,129 @@
-<!DOCTYPE html>
-<html lang='en'>
-    <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>DOCUMENTO</title>
-    </head>
-    
-    </body>
-        <h1>Hola Mundo</h1>
-    </body>
-</html>
+{% extends 'base.html' %}
+{% block contenido %}
+<div class="contenedor">
+    <header class="fila" id="portada">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12" id="logo"><h2>Oportunidad <br> de <br> Cambio</h2></div>
+        <div class="col-lg-0 col-md-8 col-sm-8 col-xs-0" ></div>
+        <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12" id="header">
+            <ul class="nav">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/noticias.html">Noticias</a></li>
+                <li><a href="">Acerca de</a>
+                    <ul>
+                        <li><a href="/nosotros.html">Nosotros</a></li>
+                        <li><a href="">Contacto</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Loguearse</a>
+                    <ul>
+                        <li><a href="">Iniciar sesion</a></li>
+                        <li><a href="/registrarse.html">Registrarse</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main class="fila" >
+        <section class="caja-inicio">
+            <div>
+                <nav>
+                <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12"><p class="btn"></p></div>  
+                </nav>
+            </div>
+        </section>
+        <section id="sec-nav">
+            <div id="cen-pag">
+                <section id="izq" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <div id="izqui">
+                        <h4 class="texto-izq">¿QUIERES SER PARTE DEL CAMBIO? <br></h4>
+                        <ul class="lista">
+                            <li><a href="">Haz click aqui</a>
+                                <ul>
+                                    <li><a href="">Puedes unirte a la Asociacion <br> y formar parte de <br> Oportunidad de Cambio :)</a></li>
+                                    <li><a href="">Ayudar con alimentos no perecederos </a></li>
+                                    <li><a href="">Compartir nuestra redes sociales</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section id="cen" class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
+                <nav>
+                    <div><img src="/media/fondo.jpg" alt=""></div>  
+                </nav></section>
+                <section id="der" class="col-lg-3 col-md-4 col-sm-12 col-xs-12">
+                    <div class="imagen-section"></div>
+                </section>
+            </div>
+        </section>
+        <section id="gale-fotos">
+            <div class="galeria">
+                <h1>GALERIA</h1>
+                <div class="linea"></div>
+                <div class="contenedor-imagenes">
+                    <div class="imagen">
+                        <img src="/media/a.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Los niños son el futuro</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/b.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Una sonrisa lo cambia todo</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/c.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Ayuda al projimo</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/d.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Suscribite a la pagina</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/e.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Rendirse no es una opcion</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/f.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Gracias por visitarnos</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/g.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Eres bienvenido cuando gustes</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/h.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Abre tu corazon</h3>
+                        </div>
+                    </div>
+                    <div class="imagen">
+                        <img src="/media/i.jpg" alt="">
+                        <div class="overlay">
+                            <h3>Bendiciones</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="cen-pag">
+            
+        </div>
+    </main>
+</div>
+<div class="contenedor">
+<footer class="fila"><hr><h3>&copy; Todos los derechos reservados - Asociacion civil "Oportunidad de Cambio". Matricula N° 3171</h3></footer>
+</div>
+{% endblock %}
