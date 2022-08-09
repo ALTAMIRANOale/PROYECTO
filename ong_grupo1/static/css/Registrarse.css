@@ -5,9 +5,7 @@
 }
 
 body {
-    background-image: url(/media/fondo.jpg);
-    margin: auto;
-
+    background-image: url("fondo.jpg");
 }
 
 .form-register {

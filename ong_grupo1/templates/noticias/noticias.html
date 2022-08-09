@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,13 +7,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Asociacion Civil Oportunidad de Cambio</title>
+
+    <link rel="stylesheet" type="text/css" href="{% static "css/noticias.css"%}">
+
     <link rel="stylesheet" href="/noticias.css">
+
     <link rel="icon" href="/media/fondo.jpg">
 </head>
 <body>
     <header class="header">
         <h1>noticias</h1>
-        <h2><a href="https://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611">Read tutorial</a></h2>
+
+        <h2><a href="{% url 'index' %}">Volver al Inicio</a></h2>
+
+
       </header>
         
         <main class="main columns">
